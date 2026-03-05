@@ -9,7 +9,7 @@ let activeKeyword = DEFAULT_KEYWORD;
 
 // ── Build LinkedIn URL ──────────────────────────────────────
 /**
- * Builds a LinkedIn job-search URL with remote + worldwide filters applied.
+ * Builds a LinkedIn job-search URL with remote + Africa filters applied.
  * @param {string} keywords - Job title / search term
  * @returns {string} Full LinkedIn search URL
  */
@@ -19,7 +19,8 @@ function buildLinkedInURL(keywords) {
   const params = new URLSearchParams({
     keywords: kw,
     f_WT:     '2',         // Work type: Remote
-    location: 'Worldwide', // Worldwide search
+    location: 'Africa',    // Africa region
+    geoId:    '103537801', // LinkedIn geoId for Africa
   });
 
   const exp = document.getElementById('experience').value;

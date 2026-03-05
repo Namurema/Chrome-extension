@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LinkedIn Remote Frontend Jobs</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- Header -->
+    <header class="header">
+      <div class="header-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#0A66C2" width="22" height="22" aria-hidden="true">
+          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+        </svg>
+      </div>
+      <div class="header-text">
+        <span class="header-title">Remote Jobs Finder</span>
+        <span class="header-sub">Frontend Developer &amp; Engineer · Worldwide</span>
+      </div>
+    </header>
+
+    <!-- Quick Job Title Chips -->
+    <div class="section">
+      <span class="section-label">Quick Job Titles</span>
+      <div class="chips" id="chips">
+        <button class="chip active" data-keyword="Frontend Developer">Frontend Developer</button>
+        <button class="chip" data-keyword="Frontend Engineer">Frontend Engineer</button>
+        <button class="chip" data-keyword="React Developer">React Developer</button>
+        <button class="chip" data-keyword="Next.js Developer">Next.js Developer</button>
+        <button class="chip" data-keyword="Vue.js Developer">Vue.js Developer</button>
+        <button class="chip" data-keyword="Angular Developer">Angular Developer</button>
+        <button class="chip" data-keyword="JavaScript Developer">JavaScript Developer</button>
+        <button class="chip" data-keyword="TypeScript Developer">TypeScript Developer</button>
+        <button class="chip" data-keyword="UI Developer">UI Developer</button>
+      </div>
+    </div>
+
+    <!-- Custom Keyword Input -->
+    <div class="section">
+      <label class="section-label" for="keywords">Search Keywords</label>
+      <input
+        type="text"
+        id="keywords"
+        class="input"
+        value="Frontend Developer"
+        placeholder="e.g. Frontend Developer"
+        autocomplete="off"
+        spellcheck="false"
+      >
+    </div>
+
+    <!-- Filters Row 1 -->
+    <div class="filters-grid">
+      <div class="filter-col">
+        <label class="section-label" for="experience">Experience Level</label>
+        <select id="experience" class="select">
+          <option value="">Any Level</option>
+          <option value="2">Entry Level</option>
+          <option value="3">Associate</option>
+          <option value="4" selected>Mid-Senior</option>
+          <option value="2,3">Entry + Associate</option>
+          <option value="2,3,4">Junior to Mid</option>
+          <option value="1,2,3,4,5,6">All Levels</option>
+        </select>
+      </div>
+      <div class="filter-col">
+        <label class="section-label" for="datePosted">Date Posted</label>
+        <select id="datePosted" class="select">
+          <option value="">Any Time</option>
+          <option value="r86400">Past 24 Hours</option>
+          <option value="r604800" selected>Past Week</option>
+          <option value="r2592000">Past Month</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Filters Row 2 -->
+    <div class="filters-grid">
+      <div class="filter-col">
+        <label class="section-label" for="sortBy">Sort By</label>
+        <select id="sortBy" class="select">
+          <option value="DD" selected>Most Recent</option>
+          <option value="R">Most Relevant</option>
+        </select>
+      </div>
+      <div class="filter-col center-col">
+        <div class="remote-badge">
+          <span class="globe-icon">🌍</span>
+          <div class="badge-text">
+            <span class="badge-main">Worldwide Remote</span>
+            <span class="badge-sub">Always On</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Search + Quick Buttons -->
+    <div class="search-section">
+      <button id="searchBtn" class="search-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true">
+          <circle cx="11" cy="11" r="8"/>
+          <path d="m21 21-4.35-4.35"/>
+        </svg>
+        Search LinkedIn Jobs
+      </button>
+
+      <div class="quick-actions">
+        <button class="quick-btn" data-keyword="Frontend Developer">Frontend Dev</button>
+        <button class="quick-btn" data-keyword="Frontend Engineer">Frontend Eng</button>
+        <button class="quick-btn" data-keyword="React Developer">React Dev</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -2,7 +2,7 @@
 
 A lightweight Chrome extension that lets you instantly search for **remote frontend developer and engineer jobs in Africa** on LinkedIn, with one click.
 
----
+
 
 ## What It Does
 
@@ -12,11 +12,9 @@ A lightweight Chrome extension that lets you instantly search for **remote front
 - Filter by **Experience Level**, **Date Posted**, and **Sort Order**
 - Every search automatically locks in `Work Type: Remote` and `Location: Africa` — you never have to set those manually
 
----
 
 ## Project Structure
 
-```
 chrome-extension/
 ├── manifest.json    # Extension config (Manifest V3)
 ├── popup.html       # UI layout
@@ -26,9 +24,8 @@ chrome-extension/
     ├── icon16.png
     ├── icon48.png
     └── icon128.png
-```
 
----
+
 
 ## How to Install
 

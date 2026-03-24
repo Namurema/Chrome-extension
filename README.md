@@ -1,4 +1,5 @@
  Chrome Extension 
+ 
 A lightweight Chrome extension that lets you instantly search for **remote frontend developer jobs in Africa and on selected companies** on LinkedIn, with one click.
 
 

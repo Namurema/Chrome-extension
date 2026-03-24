@@ -1,11 +1,11 @@
-# LinkedIn Remote Frontend Jobs — Chrome Extension
-A lightweight Chrome extension that lets you instantly search for **remote frontend developer and engineer jobs in Africa** on LinkedIn, with one click.
+ Chrome Extension 
+A lightweight Chrome extension that lets you instantly search for **remote frontend developer jobs in Africa and on selected companies** on LinkedIn, with one click.
 
 
 
 ## What It Does
 
-- Searches LinkedIn Jobs filtered to **Remote** positions in **Africa**
+- Searches LinkedIn Jobs filtered to **Remote** positions in **Africa** or search by target company
 - Comes with **9 preset job title chips**: Frontend Developer, Frontend Engineer, React Developer, Next.js, Vue.js, Angular, JavaScript, TypeScript, and UI Developer
 - Supports a **custom keyword input** so you can search any title you want
 - Filter by **Experience Level**, **Date Posted**, and **Sort Order**
@@ -47,8 +47,6 @@ chrome-extension/
 4. Click **Search LinkedIn Jobs** — LinkedIn opens in a new tab with remote Africa results
 5. Or use the **quick-action buttons** at the bottom for a one-click search
 
----
 
-## Updating the Extension
 
-After making any code changes, go to `chrome://extensions` and click the **refresh (↺)** icon on the extension card to reload it
+
